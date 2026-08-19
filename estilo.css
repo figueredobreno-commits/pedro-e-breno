@@ -1,0 +1,131 @@
+/* Configurações gerais e cores do site */
+:root {
+    --fundo-claro: #FDF8F0;
+    --azul-escuro: #1b4985;
+    --amarelo-destaque: #F0C46B;
+    --texto-escuro: #333333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--fundo-claro);
+    color: var(--texto-escuro);
+    font-size: 18px; /* Fonte maior para acessibilidade */
+}
+
+/* Estilo do Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--azul-escuro);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto-escuro);
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Estilo da Seção Principal (Azul) */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--azul-escuro);
+    color: white;
+    padding: 60px 50px;
+}
+
+.conteudo-texto {
+    max-width: 50%;
+}
+
+.subtitulo {
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.destaque {
+    color: var(--amarelo-destaque);
+}
+
+.descricao {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-right: 15px;
+}
+
+.btn-amarelo {
+    background-color: var(--amarelo-destaque);
+    color: var(--texto-escuro);
+}
+
+.btn-transparente {
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.foto-redonda {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    object-fit: cover;
+    border: 5px solid rgba(255,255,255,0.2);
+}
+
+/* Seção de Acesso Rápido (Cards) */
+.acesso-rapido {
+    padding: 50px;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #E0E0E0;
+}
+
+.card h3 {
+    color: var(--azul-escuro);
+    font-size: 24px;
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--azul-escuro);
+    font-weight: bold;
+}
